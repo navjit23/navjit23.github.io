@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="formValidate.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navigatioon-->
+        <nav id="main_nav">
+            <!--nav bae content-->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>    
+            </ul>
+
+            <div id="nav_phone">
+            <h3 ><a href="contact.html"> 431-293-4693</a></h3>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main_contact">
+        <!-- main content-->
+
+        <form id="contact" action="index.html">
+            <fieldset >
+				<div>
+					<h3>Contact Me</h3>
+					<ul>
+						<li>
+							<label for="fullname">Full Name</label>
+							<input id="fullname" name="fullname" type="text" />
+							<p class="error" id="fullname_error">* Required field</p>
+						</li>
+
+                        <li>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" name="phoneNumber" id="phoneNumber">
+                            <p class="error" id="phoneNumber_error">* Required field</p>
+                            <p class="error" id="phoneNumberFormat_error">* Invalid Phone Number</p>
+                        </li>
+
+                        <li>
+                            <label for="textbox">Comments</label>
+                            <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+                        </li>
+
+						<li>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text" />
+							<p class="error" id="email_error">* Required field</p>
+							<p class="error" id="emailformat_error">* Invalid email address</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="buttons">
+					<button type="submit" id="submit">Submit</button>
+					<button type="reset" id="clear">Clear</button>
+                </div>
+
+			</fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!--footer-->
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>    
+            </ul>
+    
+            <div id="bottom_contact">
+            <p><a href="contact.html"> 431-293-4693</a></p>
+            <p><a href="contact.html">rehalnavjit23@gmail.com</a></p>
+            </div>
+    
+    </footer>
+    
+</body>
+</html>
+

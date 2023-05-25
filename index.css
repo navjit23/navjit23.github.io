@@ -1,0 +1,263 @@
+/* Global CSS*/
+
+a{
+	color: rgb(207, 206, 206);
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(8, 255, 243);
+	font-size: larger;
+	font-weight: bolder;
+	box-shadow: 0px 2px rgb(8, 255, 243);
+}
+
+body{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	font-weight: bold;
+	color: rgb(168, 168, 168);
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Navigation Bar*/
+#main_nav{
+	margin-top: 50px;
+    display: flex;
+}
+
+#main_nav ul{
+	flex: 3;
+	display:flex;
+	list-style:none;
+	justify-content: center;
+	width: 100%;
+	margin: 0px;
+	line-height: 30px;
+	}
+
+	#main_nav ul li{
+		padding: 0 30px;
+	}
+
+		#main_nav ul li a{
+		text-decoration: none;
+		color: rgb(3, 3, 3);
+		}
+		
+		#main_nav ul li a:focus{
+			color: darkcyan;
+		}
+		
+		#main_nav #nav_phone{
+			flex: 1;
+		}
+
+			#nav_phone h3{
+			width: fit-content;
+			border: 3px solid rgb(207, 206, 206);
+			border-radius: 40px;
+			padding: 5px 10px;
+			margin: 0px auto;
+			}
+
+
+
+
+/*  Index Page*/
+#main_index{
+	margin-top: 15%;
+	text-align: center;
+}
+
+	#main_index #dinosaur{
+		width: 150px;
+		height: 100px;
+		padding: 5px;
+		border-radius: 20%;
+		margin: auto;
+	} 
+
+	#main_index #contact_me{
+		margin: auto;
+		margin-top: 6%;
+		border: 3px solid rgb(207, 206, 206);
+		border-radius: 30px;
+		width: fit-content;
+	}
+
+/* Skills Page*/
+#main_skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+    #main_skills .box{
+    border: 3px solid black;
+    flex:1;
+    min-width: 500px;
+    height: 150px;
+    padding: 10px;
+    margin: 25px;
+    }
+
+    #main_skills #box1, #main_skills #box4,#main_skills #box2 ,#education{
+        color: rgb(105, 104, 104);
+    }
+
+	
+
+	#main_skills .box:hover, #education:hover{
+		background-color: rgb(39, 39, 39);
+		border: 3px solid rgb(8, 255, 243);
+	}
+
+	#education{
+		border: 3px solid black;
+		margin-top: 4%;
+
+	}
+	.img{
+		width: 50px;
+		height: 50px;
+	}
+
+
+/*  Contact Me Page*/
+
+#main_contact{
+	margin-top: 4%;
+}
+
+#main_contact h3{
+	color: black;
+}
+
+#main_contact ul li{
+	padding: 20px;
+	color: rgb(105, 104, 104)
+}
+
+
+	#main_contact .error{
+	color: red;
+}
+
+
+
+/*  footer   */
+
+footer{
+	position: absolute;
+	width: 99.5%;
+	margin: auto;
+	bottom: 0px;
+    display: flex;
+	background-color: grey;
+}
+
+footer ul{
+	flex: 3;
+	display:flex;
+	list-style:none;
+	margin: 0px;
+	height: 40px;
+	line-height: 40px;
+
+	}
+
+	footer ul li{
+		padding: 0 30px;
+
+	}
+
+		footer ul li a{
+		text-decoration: none;
+		color: rgb(3, 3, 3);
+		font-size: smaller;
+		}
+		
+		footer ul li a:focus{
+			color: darkcyan;
+		}
+		
+		footer #bottom_contact{
+			flex: 1;
+		}
+
+			footer #bottom_contact{
+			line-height: 0px;
+			width: fit-content;
+			font-size: smaller;
+			padding: 5px 10px;
+			margin: 0px auto;
+			}
+
+
+
+/* index change color to white when small
+same with skills change min width aswwell
+in contat me - about me on toop and contact me later
+
+fix bg image height
+nav bar
+*/
+
+/* media Queries */
+
+/*setting the max width allows the css to be applied below or equal to the width of 680px*/
+
+@media (max-width:680px){
+
+	/* all */
+	body{
+		height: 100%;
+		color: rgb(105, 104, 104);
+		background-color: grey;
+	}
+
+	/* nav bar*/
+	#main_nav ul {
+		display: block;
+	}
+
+		#main_nav ul li{
+			padding: 10px;
+		}
+
+		#main_nav #nav_phone h3{
+			font-size:  15px;
+			border: none;
+		}
+
+		/* footer*/
+		footer{
+		position:absolute;
+		bottom: 0px;
+		flex-wrap: wrap;
+		width: 98%;
+		margin-bottom: 0px;
+		}
+
+		/* skills*/
+		#main_skills .box{
+			min-width: 200px;
+		}
+
+		#skill_footer{
+			position: static;
+		}
+
+
+	
+
+
+	
+}
+
+
+
+
+	
